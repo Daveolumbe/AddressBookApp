@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>COMPANY BOOK APP</title>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="js/bootstrap.js"></script>
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="font-awesome/css/font-awesome.css" />
+
+</head>
+
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="img/cbk.png"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Address Book<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="addrecord.php">Add <span class="glyphicon glyphicon-pencil pull-right"></span> </a></li>
+            <li><a href="editrecord.php">Edit <span class="glyphicon glyphicon-edit pull-right"></span></a></li>
+            <li><a href="viewrecord.php">View <span class="glyphicon glyphicon-book pull-right"></span></a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="delete.php">Delete <span class="glyphicon glyphicon-trash pull-right"></span></a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+ <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url(img/bg1.jpg);"></div>
+                <div class="carousel-caption">
+                   
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/bg1.jpg');"></div>
+                <div class="carousel-caption">
+                   
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/bg1.jpg');"></div>
+                <div class="carousel-caption">
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+
+     <footer class="footer"><!-- /.This is the Fixed Footer Section -->
+      <div class="container">
+        <p class="text-muted text-center">ADDRESS BOOK APP</p>
+      </div>
+    </footer>
+</body>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+     <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</html>
