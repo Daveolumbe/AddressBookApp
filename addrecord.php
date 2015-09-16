@@ -64,6 +64,7 @@
  <div class="form-group">
   <label class="control-label" for="name">Name: <span id="nameDetails" class="text-danger">(*)</span></label>
   <input id="txtname" name="txtname" type="text" placeholder="Enter Your Name" class="form-control">
+  <span id="namex" class="text-danger"> </span>
 </div>
  <div class="form-group">
   <label class="control-label" for="inputSuccess1">Company:</label>
@@ -75,7 +76,7 @@
 </div>
  <div class="form-group">
   <label class="control-label" for="telephone">Telephone: <span id="phoneDetails" class="text-danger">(*)</span></label>
-  <input id="txtphone" type="text" placeholder="Enter Telephone Number" class="form-control" name="txtphone" >
+  <input id="txtphone" type="text" placeholder="Enter Telephone Number" class="form-control" name="txtphone" ><span id="phonex" class="text-danger"> </span>
 </div>
 <div class="form-group">
   <label class="control-label" for="inputSuccess1">Email:</label>
@@ -151,40 +152,17 @@ function validateForm() {
     var name = document.forms["myForm"]["txtname"].value;
 	 var phone = document.forms["myForm"]["txtphone"].value;
     if (name == null || name == "") {
-        alert("Name is required");
+		var error = document.getElementById("namex");
+	    error.innerHTML = "Name is required";
         return false;
     }
+	
 	 if (phone == null || phone == "") {
-        alert("Telephone is required");
+        var error = document.getElementById("phonex");
+	    error.innerHTML = "Telephone is required";
         return false;
     }
 }
 </script> 
-    
-    
-<script>
-$(document).ready(function() {
-    $('#myForm').formValidation({
-        framework: 'bootstrap',
-        err: {
-            container: '#messages'
-        },
-        icon: {
-            valid: 'glyphicon glyphicon-ok',
-            invalid: 'glyphicon glyphicon-remove',
-            validating: 'glyphicon glyphicon-refresh'
-        },
-        fields: {
-            txtname: {
-                validators: {
-                    notEmpty: {
-                        message: 'The name is required and cannot be empty'
-                    }
-                }
-            },
-		}
-    });
-});
-</script>    
-    
+        
 </html>
